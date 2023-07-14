@@ -44,7 +44,7 @@ const classes = {
     'nx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:nx-border'
   ),
   inactive: cn(
-    'nx-text-gray-500 hover:nx-bg-gray-100 hover:nx-text-gray-900',
+    'nx-text-neutral-900 hover:nx-bg-gray-100 hover:nx-text-gray-900',
     'dark:nx-text-neutral-400 dark:hover:nx-bg-primary-100/5 dark:hover:nx-text-gray-50',
     'contrast-more:nx-text-gray-900 contrast-more:dark:nx-text-gray-50',
     'contrast-more:nx-border-transparent contrast-more:hover:nx-border-gray-900 contrast-more:dark:hover:nx-border-gray-50'
@@ -450,11 +450,11 @@ export function Sidebar({
           <div
             className={cn(
               'nx-sticky nx-bottom-0',
-              'nx-bg-white dark:nx-bg-dark', // when banner is showed, sidebar links can be behind menu, set bg color as body bg color
-              'nx-mx-4 nx-py-4 nx-shadow-[0_-12px_16px_#fff]',
+              //'nx-bg-white dark:nx-bg-dark', // when banner is showed, sidebar links can be behind menu, set bg color as body bg color
+              'nx-mx-4 nx-py-4', //nx-shadow-[0_-12px_16px_#fff]',
               'nx-flex nx-items-center nx-gap-2',
-              'dark:nx-border-neutral-800 dark:nx-shadow-[0_-12px_16px_#111]',
-              'contrast-more:nx-border-neutral-400 contrast-more:nx-shadow-none contrast-more:dark:nx-shadow-none',
+             // 'dark:nx-border-neutral-800 dark:nx-shadow-[0_-12px_16px_#111]',
+             // 'contrast-more:nx-border-neutral-400 contrast-more:nx-shadow-none contrast-more:dark:nx-shadow-none',
               showSidebar
                 ? cn(hasI18n && 'nx-justify-end', 'nx-border-t')
                 : 'nx-py-4 nx-flex-wrap nx-justify-center'

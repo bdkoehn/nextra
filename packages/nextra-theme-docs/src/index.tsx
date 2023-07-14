@@ -235,8 +235,9 @@ const InnerLayout = ({
         </ActiveAnchorProvider>
       </div>
       {themeContext.footer &&
-        renderComponent(config.footer.component, { menu: hideSidebar })}
-    </div>
+        renderComponent(config.footer.component, { menu: hideSidebar })}        
+            <div className="grainy nx-fixed nx--bottom-0 nx--left-0 nx--z-10 nx-h-full nx-w-full nx-opacity-10 dark:nx-opacity-5 sm:nx--bottom-0 sm:nx--left-0"></div>
+    </div>    
   )
 }
 

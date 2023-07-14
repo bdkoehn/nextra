@@ -1,7 +1,39 @@
 {
-  "index": "Introduction",
-  "get-started": "Get Started",
-  "features": "Features",
-  "themes": "Themes",
-  "advanced": "Advanced"
+  "index": {
+    "title": "Introduction",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "get-started": {
+    "title": "Get Started",
+    "type": "page"
+  },
+  "features": {
+    "title": "Features",
+    "type": "page"
+  },
+  "chapters": {
+    "title": "Chapters",
+    "type": "page"
+  },
+  "themes": {
+    "title": "Themes",
+    "type": "menu",
+    "items": {
+      "blog":{
+        "title":"Blog",
+        "href": "/themes/blog"
+      },
+      "docs":{
+        "title":"Docs",
+        "href": "/themes/docs"
+      }
+    }
+  },
+  "advanced": {
+    "title": "Advanced",
+    "type": "page"
+  }
 }

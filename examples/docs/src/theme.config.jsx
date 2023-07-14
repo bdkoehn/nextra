@@ -5,9 +5,27 @@ import { useConfig } from 'nextra-theme-docs'
  * @type {import('nextra-theme-docs').DocsThemeConfig}
  */
 export default {
+  logo: <span>MIDCHAPTER</span>,
+  footer: {
+    text: `${new Date().getFullYear()} © Midchapter.`
+  },
+  feedback: {
+    content: null
+  },
+  search:{
+    placeholder: 'Find...',
+  },
+  toc: {
+    float: true,
+    title: "CONTENTS"
+  },
+  sidebar: {
+    toggleButton: true,
+    defaultMenuCollapseLevel: 1
+  },
   banner: {
-    key: 'Nextra 2',
-    text: 'Nextra 2 Alpha'
+    key: 'Midchapter',
+    text: 'MIDCHAPTER'
   },
   chat: {
     link: 'https://discord.gg/hEM84NMkRv' // Next.js discord server,
@@ -15,7 +33,7 @@ export default {
   docsRepositoryBase:
     'https://github.com/shuding/nextra/blob/core/examples/docs',
   editLink: {
-    text: 'Edit this page on GitHub'
+    text: null
   },
   faviconGlyph: '✦',
   useNextSeoProps() {
@@ -54,18 +72,18 @@ export default {
       ],
       additionalMetaTags: [
         { content: 'en', httpEquiv: 'Content-Language' },
-        { content: 'Nextra', name: 'apple-mobile-web-app-title' },
+        { content: 'Midchapter', name: 'apple-mobile-web-app-title' },
         { content: '#fff', name: 'msapplication-TileColor' },
         { content: '/ms-icon-144x144.png', name: 'msapplication-TileImage' }
       ],
       description:
-        frontMatter.description || 'Nextra: the Next.js site builder',
+        frontMatter.description || 'Midchapter: continue the story',
       openGraph: {
         images: [
           { url: frontMatter.image || 'https://nextra.vercel.app/og.png' }
         ]
       },
-      titleTemplate: '%s – Nextra',
+      titleTemplate: '%s – Midchapter',
       twitter: {
         cardType: 'summary_large_image',
         site: 'https://nextra.vercel.app'
